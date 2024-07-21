@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TapSwap Web App</title>
+    <title>Telegram Coin Reward App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>TAPSWAP</h1>
+        <h1>Telegram Coin Reward App</h1>
     </header>
-    <main id="main-content">
-        <!-- Content will be dynamically loaded here -->
+    <main>
+        <div id="image-container">
+            <a href="#" onclick="showImageAndReward(); return false;">
+                <img src="https://i.ibb.co/HqDrCJM/images.png" alt="images" border="0">
+            </a>
+        </div>
+        <div id="result-container" style="display: none;">
+            <p id="result"></p>
+        </div>
+        <div id="referral-container" style="display: none;">
+            <h2>Your Referral Link:</h2>
+            <input type="text" id="referral-link" readonly>
+            <button onclick="copyReferralLink()">Copy Link</button>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2024 TapSwap Club</p>
+        <p>&copy; 2024 Telegram Coin App</p>
     </footer>
     <script src="script.js"></script>
 </body>
